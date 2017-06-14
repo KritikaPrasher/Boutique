@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+
+      
+
+
+
+    <TextView
+        android:id="@+id/roundbust"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:text="Round Bust" />
+
+    <TextView
+        android:id="@+id/roundwaist"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Round Waist"
+        android:layout_below="@+id/roundbust"
+        android:layout_alignLeft="@+id/roundbust"
+        android:layout_alignStart="@+id/roundbust" />
+
+    <TextView
+        android:id="@+id/roundhip"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Round Hip"
+        android:layout_below="@+id/roundwaist"
+        android:layout_alignLeft="@+id/roundwaist"
+        android:layout_alignStart="@+id/roundwaist" />
+
+    <TextView
+        android:id="@+id/acrossshoulder"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Across Shoulder"
+        android:layout_below="@+id/roundhip"
+        android:layout_alignLeft="@+id/acrossfront"
+        android:layout_alignStart="@+id/acrossfront" />
+
+    <TextView
+        android:id="@+id/acrossfront"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Across Front"
+        android:layout_below="@+id/acrossshoulder"
+        android:layout_alignLeft="@+id/roundhip"
+        android:layout_alignStart="@+id/roundhip" />
+
+    <TextView
+        android:id="@+id/acrossback"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/acrossfront"
+        android:layout_alignStart="@+id/acrossfront"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:text="Across Back" />
+
+    <TextView
+        android:id="@+id/shouldertobust"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/acrossback"
+        android:layout_alignStart="@+id/acrossback"
+        android:layout_below="@+id/acrossback"
+        android:layout_marginTop="20dp"
+        android:text="Shoulder to Bust" />
+
+    <TextView
+        android:id="@+id/shouldertowaist"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shouldertobust"
+        android:layout_alignStart="@+id/shouldertobust"
+        android:layout_below="@+id/shouldertobust"
+        android:layout_marginTop="20dp"
+        android:text="Shoulder To Waist" />
+
+    <TextView
+        android:id="@+id/shouldertohip"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shouldertowaist"
+        android:layout_alignStart="@+id/shouldertowaist"
+        android:layout_below="@+id/shouldertowaist"
+        android:layout_marginTop="20dp"
+        android:text="Shoulder to Hip" />
+
+    <TextView
+        android:id="@+id/shouldertohemline"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shouldertohip"
+        android:layout_alignStart="@+id/shouldertohip"
+        android:layout_below="@+id/shouldertohip"
+        android:layout_marginTop="20dp"
+        android:text="Shoulder to Hemline" />
+
+    <TextView
+        android:id="@+id/yokepoint"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shouldertohemline"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/shouldertohemline"
+        android:layout_marginBottom="20dp"
+        android:text="Yoke Point" />
+
+    <EditText
+        android:id="@+id/mroundbust"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Round Bust"
+        android:layout_alignBaseline="@+id/roundbust"
+        android:layout_alignBottom="@+id/roundbust"
+        android:layout_toRightOf="@+id/shouldertohemline"
+        android:layout_toEndOf="@+id/shouldertohemline" />
+
+    <EditText
+        android:id="@+id/mroundwaist"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Round Waist"
+        android:layout_alignBaseline="@+id/roundwaist"
+        android:layout_alignBottom="@+id/roundwaist"
+        android:layout_alignLeft="@+id/mroundbust"
+        android:layout_alignStart="@+id/mroundbust" />
+
+    <EditText
+        android:id="@+id/mroundhip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mroundwaist"
+        android:layout_alignStart="@+id/mroundwaist"
+        android:layout_below="@+id/mroundwaist"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Round Hip" />
+
+    <EditText
+        android:id="@+id/macrossshoulder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mroundhip"
+        android:layout_alignStart="@+id/mroundhip"
+        android:layout_below="@+id/mroundhip"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Across Shoulder" />
+
+    <EditText
+        android:id="@+id/macrossfront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/macrossshoulder"
+        android:layout_alignStart="@+id/macrossshoulder"
+        android:layout_below="@+id/macrossshoulder"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Across Front" />
+
+    <EditText
+        android:id="@+id/macrossback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/macrossshoulder"
+        android:layout_alignStart="@+id/macrossshoulder"
+        android:layout_centerVertical="true"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Across Back" />
+
+    <EditText
+        android:id="@+id/mshouldertobust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/macrossback"
+        android:layout_alignStart="@+id/macrossback"
+        android:layout_below="@+id/macrossback"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Shoulder to Bust" />
+
+    <EditText
+        android:id="@+id/mshouldertowaist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mshouldertobust"
+        android:layout_alignStart="@+id/mshouldertobust"
+        android:layout_below="@+id/mshouldertobust"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Shoulder to Waist" />
+
+    <EditText
+        android:id="@+id/mshouldertohip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mshouldertowaist"
+        android:layout_alignStart="@+id/mshouldertowaist"
+        android:layout_below="@+id/mshouldertowaist"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Shoulder to Hip" />
+
+    <EditText
+        android:id="@+id/fulllength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Full Length"
+        android:layout_alignBaseline="@+id/shouldertohemline"
+        android:layout_alignBottom="@+id/shouldertohemline"
+        android:layout_toRightOf="@+id/shouldertohemline"
+        android:layout_toEndOf="@+id/shouldertohemline" />
+
+    <EditText
+        android:id="@+id/myokepoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fulllength"
+        android:layout_alignStart="@+id/fulllength"
+        android:layout_below="@+id/fulllength"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Yoke Point" />
+
+
+</RelativeLayout>
+
+
+
+
+

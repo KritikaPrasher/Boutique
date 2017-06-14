@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kritikaprasher.boutique.BoutiqueOwner">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/enterbtqdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kindly Enter Boutique's Details"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/btqName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter Name"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/btqPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Enter Phone number"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/btqEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter email"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/btqAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textPostalAddress"
+            android:hint="Enter address"
+            />
+
+        <EditText
+            android:id="@+id/btqcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:hint="Enter city"
+
+            />
+
+        <EditText
+            android:id="@+id/btqdateofbirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="date"
+            android:hint="Enter Date of Birth"
+            />
+
+
+
+        <Button
+            android:id="@+id/btqSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+</ScrollView>

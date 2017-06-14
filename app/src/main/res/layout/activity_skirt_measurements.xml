@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kritikaprasher.boutique.SkirtMeasurements">
+
+    <TextView
+        android:id="@+id/skirtmeasurements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="39dp"
+        android:textSize="28dp"
+        android:text="Skirt Measurements"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/rwaist"
+        android:layout_alignStart="@+id/rwaist" />
+
+    <TextView
+        android:id="@+id/rwaist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="19dp"
+        android:textSize="20dp"
+        android:text="Round Waist"
+        android:layout_below="@+id/skirtmeasurements"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/rhip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rwaist"
+        android:layout_alignStart="@+id/rwaist"
+        android:layout_below="@+id/rwaist"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Round Hip" />
+
+    <TextView
+        android:id="@+id/brise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rhip"
+        android:layout_alignStart="@+id/rhip"
+        android:layout_below="@+id/rhip"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Body Rise" />
+
+    <TextView
+        android:id="@+id/skirtlength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/brise"
+        android:layout_alignStart="@+id/brise"
+        android:layout_below="@+id/brise"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:hint="Skirt length" />
+
+    <TextView
+        android:id="@+id/skirtflair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/skirtlength"
+        android:layout_alignStart="@+id/skirtlength"
+        android:layout_below="@+id/skirtlength"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:hint="Skirt Flair" />
+
+</RelativeLayout>

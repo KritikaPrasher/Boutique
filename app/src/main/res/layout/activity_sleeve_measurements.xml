@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kritikaprasher.boutique.SleeveMeasurements">
+
+    <TextView
+        android:id="@+id/armscye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="32dp"
+        android:textSize="20dp"
+        android:text="Arm Scye"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/abovetheelbow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Above the elbow"
+        android:layout_below="@+id/armscye"
+        android:layout_alignLeft="@+id/armscye"
+        android:layout_alignStart="@+id/armscye" />
+
+    <TextView
+        android:id="@+id/shouldertoelbow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Shoulder to Elbow"
+        android:textSize="20dp"
+        android:layout_below="@+id/abovetheelbow"
+        android:layout_alignLeft="@+id/abovetheelbow"
+        android:layout_alignStart="@+id/abovetheelbow" />
+
+    <TextView
+        android:id="@+id/shouldertowrist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shouldertoelbow"
+        android:layout_alignStart="@+id/shouldertoelbow"
+        android:layout_below="@+id/shouldertoelbow"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Shoulder to Wrist" />
+
+    <TextView
+        android:id="@+id/roundthewrist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shouldertowrist"
+        android:layout_alignStart="@+id/shouldertowrist"
+        android:layout_below="@+id/shouldertowrist"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Round the wrist" />
+
+    <TextView
+        android:id="@+id/roundtheneck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/roundthewrist"
+        android:layout_alignStart="@+id/roundthewrist"
+        android:layout_below="@+id/roundthewrist"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Round the neck" />
+
+    <EditText
+        android:id="@+id/armscyeedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:inputType="numberDecimal"
+        android:hint="Arm Scye"
+        android:layout_alignBaseline="@+id/armscye"
+        android:layout_alignBottom="@+id/armscye"
+        android:layout_toRightOf="@+id/shouldertoelbow"
+        android:layout_toEndOf="@+id/shouldertoelbow" />
+
+    <EditText
+        android:id="@+id/aboveelbowedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:hint="Above the elbow"
+        android:layout_alignBaseline="@+id/abovetheelbow"
+        android:layout_alignBottom="@+id/abovetheelbow"
+        android:layout_alignLeft="@+id/armscyeedit"
+        android:layout_alignStart="@+id/armscyeedit" />
+
+    <EditText
+        android:id="@+id/shouldertoelbowedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboveelbowedit"
+        android:layout_toEndOf="@+id/shouldertoelbow"
+        android:layout_toRightOf="@+id/shouldertoelbow"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:hint="Shoulder to elbow" />
+
+    <EditText
+        android:id="@+id/shouldertowristedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shouldertoelbowedit"
+        android:layout_alignStart="@+id/shouldertoelbowedit"
+        android:layout_below="@+id/shouldertoelbowedit"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:hint="Shoulder to wrist" />
+
+    <EditText
+        android:id="@+id/roundthewristedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shouldertowristedit"
+        android:layout_alignStart="@+id/shouldertowristedit"
+        android:layout_below="@+id/shouldertowristedit"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:hint="Round the wrist" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/roundthewristedit"
+        android:layout_alignStart="@+id/roundthewristedit"
+        android:layout_below="@+id/roundthewristedit"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:hint="Round the neck" />
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kritikaprasher.boutique.Neckmeasurements">
+
+
+    <TextView
+        android:id="@+id/armdepth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="Arm Depth"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/sleevelength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Sleeve Length"
+        android:layout_below="@+id/armdepth"
+        android:layout_alignLeft="@+id/armdepth"
+        android:layout_alignStart="@+id/armdepth"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/busttobustpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sleevelength"
+        android:layout_alignStart="@+id/sleevelength"
+        android:layout_below="@+id/sleevelength"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Bust to Bust Point" />
+
+    <TextView
+        android:id="@+id/sleevetohemline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/busttobustpoint"
+        android:layout_alignRight="@+id/busttobustpoint"
+        android:layout_below="@+id/busttobustpoint"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Sleeve to Hemline" />
+
+    <TextView
+        android:id="@+id/sleeveroundelbow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sleevetohemline"
+        android:layout_alignStart="@+id/sleevetohemline"
+        android:layout_below="@+id/sleevetohemline"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="Sleeve Round Elbow" />
+
+    <TextView
+        android:id="@+id/sleeveroundbiceps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sleeveroundelbow"
+        android:layout_alignStart="@+id/sleeveroundelbow"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:hint="Sleeve Round Biceps" />
+
+    <EditText
+        android:id="@+id/marmdepth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Arm Depth"
+        android:layout_alignBaseline="@+id/armdepth"
+        android:layout_alignBottom="@+id/armdepth"
+        android:layout_toRightOf="@+id/sleeveroundelbow"
+        android:layout_toEndOf="@+id/sleeveroundelbow" />
+
+    <EditText
+        android:id="@+id/msleevelength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Sleeve Length"
+        android:layout_below="@+id/marmdepth"
+        android:layout_alignLeft="@+id/marmdepth"
+        android:layout_alignStart="@+id/marmdepth" />
+
+    <EditText
+        android:id="@+id/mbusttobust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/msleevelength"
+        android:layout_alignStart="@+id/msleevelength"
+        android:layout_below="@+id/msleevelength"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Bust to Bust" />
+
+    <EditText
+        android:id="@+id/msleevetohemline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mbusttobust"
+        android:layout_alignStart="@+id/mbusttobust"
+        android:layout_below="@+id/mbusttobust"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Sleeve to Hemline" />
+
+    <EditText
+        android:id="@+id/msleeveroundelbow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Sleeve Round Elbow"
+        android:layout_alignBaseline="@+id/sleeveroundelbow"
+        android:layout_alignBottom="@+id/sleeveroundelbow"
+        android:layout_toRightOf="@+id/sleeveroundbiceps"
+        android:layout_toEndOf="@+id/sleeveroundbiceps" />
+
+    <EditText
+        android:id="@+id/msleeveroundbiceps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/sleeveroundbiceps"
+        android:layout_toRightOf="@+id/sleeveroundbiceps"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Sleeve around Biceps" />
+
+
+</RelativeLayout>

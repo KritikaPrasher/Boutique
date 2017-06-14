@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.kritikaprasher.boutique.LowerMeasurements">
+
+    <TextView
+        android:id="@+id/waist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:text="Waist size" />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Full Length"
+        android:layout_below="@+id/waist"
+        android:layout_alignLeft="@+id/waist"
+        android:layout_alignStart="@+id/waist" />
+
+    <TextView
+        android:id="@+id/roundthigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/length"
+        android:layout_alignStart="@+id/length"
+        android:layout_below="@+id/length"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Round Thigh" />
+
+    <TextView
+        android:id="@+id/roundknee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/roundthigh"
+        android:layout_alignStart="@+id/roundthigh"
+        android:layout_below="@+id/roundthigh"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Round Knee" />
+
+    <TextView
+        android:id="@+id/roundcalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/roundknee"
+        android:layout_alignStart="@+id/roundknee"
+        android:layout_below="@+id/roundknee"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Round Calf" />
+
+    <TextView
+        android:id="@+id/crotch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Crotch"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/roundcalf"
+        android:layout_alignStart="@+id/roundcalf" />
+
+    <TextView
+        android:id="@+id/bodyrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Body Rise"
+        android:textSize="20dp"
+        android:layout_below="@+id/crotch"
+        android:layout_alignLeft="@+id/crotch"
+        android:layout_alignStart="@+id/crotch" />
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bottom"
+        android:layout_below="@+id/bodyrise"
+        android:layout_alignLeft="@+id/bodyrise"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/bodyrise" />
+
+    <EditText
+        android:id="@+id/mwaist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Waist"
+        android:layout_alignBaseline="@+id/waist"
+        android:layout_alignBottom="@+id/waist"
+        android:layout_toRightOf="@+id/roundthigh"
+        android:layout_toEndOf="@+id/roundthigh"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <EditText
+        android:id="@+id/mlength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Length"
+        android:layout_below="@+id/mwaist"
+        android:layout_alignLeft="@+id/mwaist"
+        android:layout_alignStart="@+id/mwaist" />
+
+    <EditText
+        android:id="@+id/mroundthigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mlength"
+        android:layout_alignStart="@+id/mlength"
+        android:layout_below="@+id/mlength"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Round Thigh" />
+
+    <EditText
+        android:id="@+id/mroundknee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mroundthigh"
+        android:layout_alignStart="@+id/mroundthigh"
+        android:layout_below="@+id/mroundthigh"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Round Knee" />
+
+    <EditText
+        android:id="@+id/mroundcalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Round Calf"
+        android:layout_alignBaseline="@+id/roundcalf"
+        android:layout_alignBottom="@+id/roundcalf"
+        android:layout_alignLeft="@+id/mroundknee"
+        android:layout_alignStart="@+id/mroundknee" />
+
+    <EditText
+        android:id="@+id/mcrotch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mroundcalf"
+        android:layout_alignRight="@+id/mroundcalf"
+        android:layout_centerVertical="true"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Crotch" />
+
+    <EditText
+        android:id="@+id/mbodyrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mcrotch"
+        android:layout_alignStart="@+id/mcrotch"
+        android:layout_below="@+id/mcrotch"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="Body Rise" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="bottom"
+        android:layout_below="@+id/mbodyrise"
+        android:layout_alignLeft="@+id/mbodyrise"
+        android:layout_alignStart="@+id/mbodyrise" />
+</RelativeLayout>
